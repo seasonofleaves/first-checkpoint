@@ -1,0 +1,81 @@
+:root {
+  --magic-card-distance: -5vh;
+}
+
+
+
+header {
+  min-height: 40vh;
+}
+
+.hero-bg {
+  /* background-image: url(Imgs/Jeremy-Clarkson-yelling.jpg);
+  background-position: center;
+  background-size: cover; */
+  background-color: bisque;
+}
+
+.submit {
+  background-color: rgba(193, 222, 193, 0.492);
+  color: rgba(39, 96, 39, 0.804);
+  font-weight: 500;
+  font-size: small;
+  max-width: fit-content;
+  padding-left: 1.8em;
+  padding-right: 1.8em;
+  padding-top: .2em;
+  padding-bottom: .2em;
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+.magic-card {
+  right: 3em;
+  bottom: var(--magic-card-distance);
+  background-color: black;
+  color: lightblue;
+  position: absolute;
+  width: 40vw;
+}
+
+.magic-containment {
+  position: relative;
+  padding: 0;
+
+}
+
+.magic-card-offset {
+  margin-top: calc(-1*var(--magic-card-distance));
+}
+
+.add-height-1 {
+  height: 40vh;
+}
+
+.add-height-2 {
+  height: 20vh;
+}
+
+.sec-2 {
+  background-color: rgba(184, 184, 230, 0.722);
+  height: 15vh;
+}
+
+
+@media screen and (max-width: 576px) {
+  .magic-card {
+    position: static;
+    background-color: var(--bs-light);
+    color: var(--bs-dark);
+    width: 100vw;
+  }
+
+  .sec-2 {
+    background-color: rgba(184, 184, 230, 0.722);
+    height: max-content;
+  }
+
+  .none {
+    display: none;
+  }
+}
