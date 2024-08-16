@@ -61,6 +61,16 @@ header {
   height: 15vh;
 }
 
+.quotes {
+  align-content: space-around;
+  justify-content: space-around;
+
+}
+
+.starcons {
+  align-items: center;
+  flex-direction: row;
+}
 
 @media screen and (max-width: 576px) {
   .magic-card {
