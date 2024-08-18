@@ -4,15 +4,20 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Varela+Round&display=swap"
+    rel="stylesheet">
+
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@mdi/font@latest/css/materialdesignicons.min.css">
-
   <link rel="stylesheet" href="style.css">
   <title>Document</title>
 </head>
 
-<body>
+<body class="roboto-condensed-reg">
 
   <nav class="navbar sticky-top navbar-expand-lg bg-body-tertiary">
     <div class="container-fluid">
@@ -23,13 +28,11 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav">
-
           <li class="nav-item">
-            <a class="nav-link" href="#">Features</a>
+            <a class="nav-link" href="#"></a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Pricing</a>
-
+            <a class="nav-link" href="#"></a>
         </ul>
       </div>
     </div>
@@ -37,8 +40,9 @@
 
   <header class="container-fluid hero-bg">
     <section class="row add-height-1 align-items-center">
-      <div class="col-12 col-md-5 col-md-5 offset-md-1 card">
-        <h6 class="my-1">Sign Up for Shenanigans</h6>
+
+      <div class="col-12 col-md-5 col-md-5 offset-md-1 card cw">
+        <h6 class="my-2">Sign Up for Shenanigans</h6>
         <input type="name" class="col my-1" placeholder="NAME">
         <input type="email" class="col my-1" placeholder="EMAIL">
         <input type="phone" class="col my-1" placeholder="PHONE">
@@ -46,12 +50,14 @@
         <button class="btn submit">SUBMIT</button>
       </div>
 
-      <div class="col-md-6 none">
+      <div class="col-md-6 offset-md-1 none text-light">
         <h3>
           The Best of Jeremy Clarkson
         </h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis, ad.</p>
-
+        <p>Voted UK's Sexiest Man Two Years In A Row!</p>
+        <a class="sexiest-man"
+          href="https://www.carscoops.com/2024/05/jeremy-clarkson-named-uks-sexiest-man-alive-for-the-second-year-running/">
+          No, seriously.</a>
       </div>
 
     </section>
@@ -59,72 +65,98 @@
 
 
   <main class="container-fluid">
-
     <section class="row sec-2">
-      <div class="col-12 col-md-5 offset-md-1 order-last order-md-first align-content-center text-center text-sm-start">
 
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti obcaecati
-          dolorem modi placeat repellat
-          laboriosam deleniti odio numquam a aut volupta</p>
-
+      <div
+        class="p-3 col-12 col-md-5 offset-md-1 order-last order-md-first align-content-center text-center text-sm-start">
+        <p class="sec-2-text">Jeremy Clarkson is an English broadcaster, journalist, and writer who specializes in
+          motoring. He
+          is best
+          known for his role on the BBC TV show <i>Top Gear</i>, along with co-presenters Richard Hammond and James May.
+        </p>
       </div>
 
       <div class="col-12 col-md-6 magic-containment">
-        <div class="magic-card p4 rounded">
+        <div class="magic-card p-2">
+          <h3 class="p-3">Clarkson's Memorable Quotes</h3>
           <ul>
-            <li>One</li>
-            <li>Two</li>
-            <li>Three</li>
-            <li>Four</li>
+            <li>"I did a thing!"</li>
+            <li>"Speed has never killed anyone. Suddenly becoming stationary, thats what gets you."</li>
+            <li>"HAMMOND!"</li>
+            <li>"Speed!"</li>
           </ul>
         </div>
       </div>
+
     </section>
 
-    <section class="row ">
-      <div class="col-4"> Image goes here
-        <!-- <img src="Imgs/Jeremy-Clarkson-croatia.jpg" alt="Jeremy Clarkson"> -->
+    <section class="row">
 
+      <div class="col-12 col-md-4">
+        <img class="img-fluid book order-1"
+          src="https://i0.wp.com/samstillreading.wordpress.com/wp-content/uploads/2022/04/diddly-squat.jpg?resize=1400%2C2157&ssl=1"
+          alt="Jeremy Clarkson">
       </div>
-      <div class="col-8 magic-card-offset">
-        <h1>Stuff and Things</h1>
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Modi ea optio odit, alias consectetur accusamus
-          laboriosam. Ut, consectetur sapiente facere voluptas architecto voluptatem dolorem itaque earum inventore
-          ducimus ipsam recusandae.</p>
+
+      <div class="col-12 col-md-8 magic-card-offset order-2">
+        <h1>Awards and Accomplishments</h1>
+        <p>Clarkson was a host for <i>Top Gear</i> from 1988-2015, and is considered one of the most influential people
+          in the motoring industry. While on <i>Top Gear</i>, Clarkson and co-host James May became the first people to
+          drive a motor vehicle to the north pole. Following his exit from <i>Top Gear</i>, Clarkson (along with James
+          May and Richard Hammond) moved on to Amazon Prime Video to continue their adventures with <i>The Grand
+            Tour</i>. In 2020, Clarkson began a new show on Amazon, <i>Clarkson's Farm</i>. In 2021, he and co-farmer,
+          Caleb Cooper, won the British Farming Award for Flying the Flag for British Agriculture. Clarkson has written
+          many books, including a series based on his time on the farm. (Pictured left)</p>
       </div>
+
     </section>
-
   </main>
 
   <footer class="container-fluid">
     <section class="row quotes">
 
-      <div class="col-3">
-        <div class="card">One Card
-
-
+      <div class="col-12 col-sm-3 order-2 order-md-1 my-3">
+        <div class="card shadow-lg orangutan">
+          <h2>🦧</h2>
+          <p class="hammond">"Top Gear's short-sighted orangutan." -Richard Hammond
+          </p>
         </div>
-
       </div>
 
-      <div class="col-3">
-        <div class="card starcons">Two card
-          <span class="mdi mdi-star-circle"></span>
-          <span class="mdi mdi-star-circle"></span>
-          <span class="mdi mdi-star-circle"></span>
+      <div class="col-12 col-sm-3 order-1 order-md-2 my-3">
+        <div class="card starcons shadow-lg p-3">
+          <h2 class="mdi mdi-star-circle star-pad" style="color: yellow;"></h2>
+          <h2 class="mdi mdi-star-circle star-pad" style="color: yellow;"></h2>
+          <h2 class="mdi mdi-star-circle star-pad" style="color: yellow;"></h2>
+          <p class="james">
+            "As much as I think he's a knob, I quite like working with Jeremy." -James May
+          </p>
         </div>
-
       </div>
 
-      <div class="col-3">
-        <div class="card">Three card
 
+      <div class="col-12 col-sm-3 order-3 my-3">
+        <div class="card shadow-lg tractor">
+          <h2>🚜</h2>
+          <p class="cooper">"Fuckin' idiot." - Kaleb Cooper, Clarkson's Farm</p>
         </div>
-
       </div>
 
     </section>
 
+    <section class="row bottom-sec">
+
+      <div class="col-12">
+        <h2 class="real">Real Links to Real Sites</h2>
+        <a class="real-icons mdi mdi-instagram" href="https://www.instagram.com/jeremyclarkson1/?hl=en"></a>
+        <a class="real-icons mdi mdi-television-box" href="https://www.amazon.com/dp/B0B6G8X1YR"></a>
+        <a class="real-icons mdi mdi-tractor"
+          href="https://www.amazon.com/gp/video/detail/amzn1.dv.gti.a446c538-04d5-400d-b4a7-5dbf5741053b?autoplay=0&ref_=atv_cf_strg_wb"></a>
+        <a class="real-icons mdi mdi-store"
+          href="https://diddlysquatfarmshop.com/?srsltid=AfmBOopcP_1x3d21i2LlYvvNkCk3932oqDE4aQE1ig1bZ3u8-ua0uRgL"></a>
+      </div>
+
+    </section>
   </footer>
 
 </body>

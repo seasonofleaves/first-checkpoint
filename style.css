@@ -1,18 +1,17 @@
 :root {
-  --magic-card-distance: -5vh;
+  --magic-card-distance: -10vh;
 }
 
-
-
 header {
-  min-height: 40vh;
+  min-height: 60vh;
 }
 
 .hero-bg {
-  /* background-image: url(Imgs/Jeremy-Clarkson-yelling.jpg);
+  /* background-image: url(Imgs/Jeremy-Clarkson-yelling.jpg); */
+  background-image: url(Imgs/clarckson-vinyl.png);
   background-position: center;
-  background-size: cover; */
-  background-color: bisque;
+  background-size: cover;
+  /* background-color: bisque; */
 }
 
 .submit {
@@ -29,11 +28,24 @@ header {
   margin-bottom: 1em;
 }
 
+.roboto-condensed-reg {
+  font-family: "Roboto Condensed", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.sexiest-man {
+  color: white;
+  font-size: small;
+  text-decoration: none;
+}
+
 .magic-card {
   right: 3em;
   bottom: var(--magic-card-distance);
   background-color: black;
-  color: lightblue;
+  color: rgb(184, 184, 230);
   position: absolute;
   width: 40vw;
 }
@@ -49,27 +61,103 @@ header {
 }
 
 .add-height-1 {
-  height: 40vh;
+  height: 60vh;
 }
 
 .add-height-2 {
-  height: 20vh;
+  height: 40vh;
+}
+
+.cw {
+  max-width: 20vw;
 }
 
 .sec-2 {
   background-color: rgba(184, 184, 230, 0.722);
-  height: 15vh;
+  height: 25vh;
+}
+
+.bottom-sec {
+  background-color: rgb(54, 129, 132);
+  min-height: 15vh;
 }
 
 .quotes {
   align-content: space-around;
   justify-content: space-around;
+  align-items: center;
+}
 
+.book {
+  padding-top: 2em;
+  padding-left: 5em;
+  width: 20vw;
 }
 
 .starcons {
-  align-items: center;
-  flex-direction: row;
+  justify-content: center;
+  flex-flow: row wrap;
+  font-size: large;
+  padding-left: 1em;
+  padding-right: 1em;
+  padding-top: .5em;
+}
+
+.orangutan {
+  flex-flow: row wrap;
+  justify-content: center;
+  font-size: large;
+  padding-top: 1em;
+}
+
+.tractor {
+  flex-flow: row wrap;
+  justify-content: center;
+  font-size: large;
+  padding-top: 1em;
+}
+
+.star-pad {
+  padding-top: .5em;
+}
+
+.james {
+  margin-left: .5em;
+  margin-bottom: .5em;
+  margin-right: .5em;
+  text-align: center;
+}
+
+.hammond {
+  /* padding-top: 2em; */
+  padding-bottom: 1em;
+  padding-left: 1em;
+  padding-right: 1em;
+  text-align: center;
+  /* margin-top: 1em; */
+}
+
+.cooper {
+  /* padding-top: 2.5em; */
+  padding-bottom: 1em;
+  padding-left: 1em;
+  padding-right: 1em;
+  text-align: center;
+  /* margin-top: 1em; */
+}
+
+.real {
+  padding-top: .5em;
+  padding-left: .5em;
+}
+
+.real-icons {
+  color: white;
+  font-size: large;
+  text-decoration: none;
+  padding-left: 2em;
+  padding-bottom: 1em;
+  padding-top: 1em;
 }
 
 @media screen and (max-width: 576px) {
@@ -85,7 +173,25 @@ header {
     height: max-content;
   }
 
+  .sec-2-text {
+    padding-top: 1em;
+    padding-left: 1em;
+    padding-right: 1em;
+  }
+
   .none {
     display: none;
+  }
+
+  .cw {
+    max-width: none;
+  }
+
+  .book {
+    padding-top: 1em;
+    padding-bottom: 1em;
+    padding-left: 0;
+    padding-right: 0;
+    width: 100vw;
   }
 }
